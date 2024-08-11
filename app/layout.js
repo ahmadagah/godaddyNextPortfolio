@@ -1,7 +1,6 @@
 import { JetBrains_Mono } from 'next/font/google'
 import './globals.css'
 
-
 import Header from '@/components/ui/Header'
 import PageTransition from '@/components/ui/PageTransition'
 import { StairTransition } from '@/components/ui/StairTransition'
@@ -31,7 +30,7 @@ export default function RootLayout({ children }) {
         <Header />
         <StairTransition />
         <PageTransition>
-        {children}
+          {children}
         </PageTransition>
       </body>
     </html>

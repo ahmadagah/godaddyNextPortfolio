@@ -16,20 +16,19 @@ const Home = () => {
               Sofware Developer
             </span>
             <h1 className='h1'>
-              Hello I'm <br />
+              Hello I am <br />
               <span className='text-accent'>
                 Ahmad Agah
               </span>
             </h1>
             <p className='max-w-[500px] mb-9 text-white/80'>
-              {' '}
-              I&apos;m a software developer with a
+              I am a software developer with a
               passion for creating innovative
               solutions. I have worked on a
               variety of projects, from web
               applications to mobile apps. I am
               always looking for new challenges
-              and opportunities to learn and grow.{' '}
+              and opportunities to learn and grow.
             </p>
             {/* button and socials */}
             <div className='flex flex-col xl:flex-row items-center gap-8'>

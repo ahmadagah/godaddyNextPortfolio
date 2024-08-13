@@ -13,7 +13,7 @@ import {
 
 import {
   SiTailwindcss,
-  SiNextjs,
+  SiNextdotjs,
 } from 'react-icons/si'
 
 const about = {
@@ -129,7 +129,7 @@ const skills = {
       name: 'Tailwind CSS',
     },
     {
-      icon: SiNextjs,
+      icon: SiNextdotjs,
       name: 'Next.js',
     },
     {

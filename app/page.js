@@ -23,7 +23,7 @@ const Home = () => {
             </h1>
             <p className='max-w-[500px] mb-9 text-white/80'>
               {' '}
-              I'm a software developer with a
+              I&apos;m a software developer with a
               passion for creating innovative
               solutions. I have worked on a
               variety of projects, from web

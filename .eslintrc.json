@@ -6,6 +6,21 @@
     "quotes": [0],
     "avoidEscape": 0,
     "alowTemplateLiterals": 0,
-    "no-useless-escape": 0
+    "no-useless-escape": 0,
+    "jsx-a11y/alt-text": [
+      "warn",
+      {
+        "elements": [
+          "img",
+          "object",
+          "area",
+          "input[type='image']"
+        ],
+        "img": ["Image"],
+        "object": [],
+        "area": [],
+        "input[type='image']": []
+      }
+    ]
   }
 }

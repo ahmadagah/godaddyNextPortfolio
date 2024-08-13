@@ -63,9 +63,8 @@ const Contacts = () => {
                 Let&apos;s work together
               </h3>
               <p className='text-white/60'>
-                {' '}
                 'Feel free to reach out and
-                discuss your project.'{' '}
+                discuss your project.
               </p>
               {/*  input fields */}
               <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>

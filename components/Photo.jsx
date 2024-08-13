@@ -34,7 +34,7 @@ const Photo = () => {
             priority
             quality={100}
             fill
-            alt='Ahmad Agah'
+            alt=''
             className='object-contain'
           />
         </motion.div>

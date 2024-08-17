@@ -46,7 +46,7 @@ const Home = () => {
                 with a strong understanding of
                 user experience to deliver
                 solutions that not only work but
-                delight users. Whether it's
+                delight users. Whether it&apos;s
                 building a high-performance
                 backend or designing an intuitive
                 frontend, I bring creativity and

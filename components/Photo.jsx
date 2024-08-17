@@ -29,14 +29,14 @@ const Photo = () => {
           }}
           className='w-[298px] h-[298px] xl:w-[498px] xl:h-[298px] mix-blend-lighten absolute'
         >
-          <Image
-            src='/assets/pf1.png'
+          {/* <Image
+            src=''
             priority
             quality={100}
             fill
             alt=''
             className='object-contain'
-          />
+          /> */}
         </motion.div>
         {/* circle */}
         <motion.svg

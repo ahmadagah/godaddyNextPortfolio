@@ -2,49 +2,40 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-
-const links = [
-  {
-    name: 'home',
-    path: '/',
-  },
-  {
-    name: 'services',
-    path: '/services',
-  },
-  {
-    name: 'resume',
-    path: '/resume',
-  },
-  {
-    name: 'work',
-    path: '/work',
-  },
-  {
-    name: 'contact',
-    path: '/contact',
-  },
-]
+import { useMemo } from 'react'
 
 const Nav = () => {
   const pathname = usePathname()
-  console.log(pathname)
+
+  const links = useMemo(
+    () => [
+      { name: 'home', path: '/' },
+      { name: 'services', path: '/services' },
+      { name: 'resume', path: '/resume' },
+      { name: 'work', path: '/work' },
+      { name: 'contact', path: '/contact' },
+    ],
+    []
+  )
+
   return (
     <nav className='flex gap-8'>
-      {links.map((link, index) => {
-        return (
-          <Link
-            href={link.path}
-            key={index}
-            className={`${
-              link.path === pathname &&
-              'text-accent border-b-2 border-accent'
-            } capitalize font-medium hover:text-accent transition-all`}
-          >
-            {link.name}
-          </Link>
-        )
-      })}
+      {links.map(({ name, path }, index) => (
+        <Link
+          href={path}
+          key={index}
+          className={`capitalize font-medium hover:text-accent transition-all ${
+            path === pathname
+              ? 'text-accent border-b-2 border-accent'
+              : ''
+          }`}
+          aria-current={
+            path === pathname ? 'page' : undefined
+          }
+        >
+          {name}
+        </Link>
+      ))}
     </nav>
   )
 }

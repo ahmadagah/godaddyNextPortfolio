@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         <Header />
         {/* <StairTransition /> */}
         {/* <PageTransition> */}
-          {children}
+        <main className='pt-10'>{children}</main>
         {/* </PageTransition> */}
       </body>
     </html>

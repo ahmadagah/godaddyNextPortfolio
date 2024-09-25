@@ -1,3 +1,6 @@
+You can view the website live at:
+https://godaddy-next-portfolio.vercel.app/
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

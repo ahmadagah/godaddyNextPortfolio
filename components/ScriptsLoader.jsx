@@ -1,30 +1,37 @@
-'use client'
+'use client';
 
-import { useEffect } from 'react'
+import { useEffect } from 'react';
 
 const ScriptsLoader = () => {
   useEffect(() => {
-    const script1 =
-      document.createElement('script')
-    script1.src =
+    // Function to create and append a script
+    const loadScript = (src) => {
+      const script =
+        document.createElement('script');
+      script.src = src;
+      script.async = true;
+      document.body.appendChild(script);
+      return script;
+    };
+
+    // Load the required scripts
+    const script1 = loadScript(
       'https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js'
-    script1.async = true
-    document.body.appendChild(script1)
-
-    const script2 =
-      document.createElement('script')
-    script2.src =
+    );
+    const script2 = loadScript(
       'https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js'
-    script2.async = true
-    document.body.appendChild(script2)
+    );
 
+    // Cleanup function to remove the scripts
     return () => {
-      document.body.removeChild(script1)
-      document.body.removeChild(script2)
-    }
-  }, [])
+      if (script1)
+        document.body.removeChild(script1);
+      if (script2)
+        document.body.removeChild(script2);
+    };
+  }, []);
 
-  return null // No UI, just loading scripts
-}
+  return null; // No UI, just loading scripts
+};
 
-export default ScriptsLoader
+export default ScriptsLoader;
